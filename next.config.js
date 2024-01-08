@@ -1,4 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+/** https://next-intl-docs.vercel.app/docs/getting-started/app-router */
+const withNextIntl = require('next-intl/plugin')();
 
-module.exports = nextConfig
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
+
+module.exports = withNextIntl({ ...nextConfig });
+
